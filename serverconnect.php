@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost","root","","agile");
+$con=mysqli_connect("localhost","root","","miniagile");
 
 // Check connection
 if (mysqli_connect_errno($con))
