@@ -25,6 +25,7 @@
 			</p>
 			<input type="submit" value="LogIn">  <a href="new_reg.php"><input type="button" value="Register"></a>
 	 </div>
+	 <?php phpinfo() ?>
 </div>
 </body>
 </html>
