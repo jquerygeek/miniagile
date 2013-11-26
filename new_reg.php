@@ -10,7 +10,7 @@
 	<div align="center">
 			<h3>Please Complete The Form</h3>
 
-			<form>
+			<form action="new_reg_pro.php" method="POST">
 			<table>
 				<tr><td> First Name 	  : </td> 	<td> <input type="text" name="f.name" required>  		</td></tr>
 				<tr><td> Last Name 		  : </td> 	<td> <input type="text" name="l.name" required>  		</td></tr>
