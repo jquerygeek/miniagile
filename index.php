@@ -3,7 +3,8 @@
 <head>
 	<title>miniAgile</title>
 	<link rel="stylesheet" type="text/css" href="css.css">
-	<?php date_default_timezone_set('Asia/Dhaka'); ?> 
+	<?php date_default_timezone_set('Asia/Dhaka'); ?>
+	<?php include 'serverconnect.php'; ?> 
 </head>
 <body>
 <div style="margin-top:20%; margin-left:15%; ">
@@ -16,16 +17,13 @@
 	<div >
 			<p>
 				Submit as: 
-					<select name="submit">
+					<select name="submit" style="width:150px;">
 						<option value=" ">Select</option>
-					  	<option value="Alamin Babar">Alamin Babar</option>
-					 	<option value="Asif Nawaz">Asif Newaz</option>
-					  	<option value="Mehedee Hasan">Mehedee Hasan</option>
-					  	<option value="Zakir Hossain">Zakir Hossain</option>
-					  	<option value="Ziaul Haq">Ziaul Haq</option>
+					  	<option value="admin">Admin</option>
 					</select>
-				<input type="submit" value="Next">
+					 & PassKey: <input type="password" name="PassKey">
 			</p>
+			<input type="submit" value="LogIn">  <a href="new_reg.php"><input type="button" value="Register"></a>
 	 </div>
 </div>
 </body>
