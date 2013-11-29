@@ -21,6 +21,7 @@
 				Name: <?php echo $_POST['f_name']. " ".$_POST['l_name'] ; ?> <br>
 				UserName: <?php echo $_POST['username']; ?> <br>
 				Password: *******
+				 <a href="index.php"> <input type="button" value"Log In"> </a>
 			</p>
 		</div>
 		</body>
