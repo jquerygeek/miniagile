@@ -7,7 +7,7 @@
 <head>
 	<title>Update for Today</title>
 	<link rel="stylesheet" type="text/css" href="css.css">
-	<?php date_default_timezone_set('Asia/Dhaka'); ?>
+	
 	
 </head>
 <body>
@@ -22,8 +22,10 @@
 	<div>
 		<?php echo "Hello " . $user_name . "<br>";
 	 		  echo "Today is ". date("D ,d M, Y") . "<br>";
-	 		  echo "Current Time is ". date("h:i:s"). "<br>" ;?>
-		
+	 		  echo "Current Time is ". date("h:i:s"). "<br>" ;
+	 	?>
+
+	 			
 	 	<div class="divIndex" > 
 	 		What Was Done: <br>
 	 		<textarea class="taIndex" name="done"></textarea>

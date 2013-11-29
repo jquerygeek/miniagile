@@ -3,7 +3,6 @@
 <head>
 	<title>miniAgile</title>
 	<link rel="stylesheet" type="text/css" href="css.css">
-	<?php date_default_timezone_set('Asia/Dhaka'); ?>
 	<?php include 'serverconnect.php'; ?> 
 	<?php 
 		$all_user= "SELECT * FROM `user_table`";
@@ -15,7 +14,7 @@
 <div style="margin-top:20%; margin-left:15%; ">
 <h1>Submit your Activities</h1>
 
-<?php echo "Today is ". date("D ,d M, Y") . "<br>" ; ?> 
+<?php echo "Today is ". date("D, d M, Y") . "<br>" ; ?> 
 <?php echo "Current Time is ". date("h:i:s"). "<br>" ;?>
 
 	<form action="verify.php" method="POST">
