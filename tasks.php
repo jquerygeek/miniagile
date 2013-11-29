@@ -1,15 +1,28 @@
+<?php include 'serverconnect.php' ?>
+<?php session_start(); 
+	$user_name=$_SESSION["user_name"];
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Update for Today</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<?php date_default_timezone_set('Asia/Dhaka'); ?>
+	
 </head>
 <body>
 
-<?php echo "Today is ". date("D ,d M, Y") . "<br>" ; ?> 
-<?php echo "Current Time is ". date("h:i:s"). "<br>" ;?>
+	<?php 
+		if ($_SESSION['Login']!="YES") {
+			header('Location: error.php');
+		}
+	 ?>
 
 	<form action="submit.php" method="POST">
 	<div>
+		<?php echo "Hello " . $user_name . "<br>";
+	 		  echo "Today is ". date("D ,d M, Y") . "<br>";
+	 		  echo "Current Time is ". date("h:i:s"). "<br>" ;?>
 		
 	 	<div class="divIndex" > 
 	 		What Was Done: <br>
