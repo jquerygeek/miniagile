@@ -1,6 +1,6 @@
-<?php include 'serverconnect.php' ?>
+<?php include 'serverconnect.php';
 
-<?php 
+
 	$sql="INSERT INTO `user_table` (`user`, `pass`, `f_name`, `l_name`) 
 			VALUES ('$_POST[username]', '$_POST[password]', '$_POST[f_name]', '$_POST[l_name]') ";
 

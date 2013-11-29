@@ -1,5 +1,5 @@
-<?php include 'serverconnect.php' ?>
-<?php 
+<?php include 'serverconnect.php';
+ 
 
 	session_start();
 	if ($_SESSION['Login']!="YES") {

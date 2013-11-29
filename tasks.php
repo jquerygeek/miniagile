@@ -1,5 +1,5 @@
-<?php include 'serverconnect.php' ?>
-<?php session_start(); 
+<?php include 'serverconnect.php';
+	session_start(); 
 	$user_name=$_SESSION["user_name"];
 ?>
 <!DOCTYPE html>

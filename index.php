@@ -3,8 +3,8 @@
 <head>
 	<title>miniAgile</title>
 	<link rel="stylesheet" type="text/css" href="css.css">
-	<?php include 'serverconnect.php'; ?> 
-	<?php 
+	<?php include 'serverconnect.php';  
+	
 		$all_user= "SELECT * FROM `user_table`";
 		$user_query=mysql_query($all_user);
 	 ?>
