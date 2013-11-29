@@ -15,11 +15,14 @@
 			<title>Registered</title>
 		</head>
 		<body>
+		<div align="center">
 			<h2>You're registered with following Information:</h2>
 			<p>
 				Name: <?php echo $_POST['f_name']. " ".$_POST['l_name'] ; ?> <br>
-				UserName: <?php echo $_POST['username']; ?>
+				UserName: <?php echo $_POST['username']; ?> <br>
+				Password: *******
 			</p>
+		</div>
 		</body>
 		</html>
 

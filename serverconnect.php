@@ -4,7 +4,7 @@ $password= "";
 $host="localhost";
 $database="miniagile";
 
-$con=mysqli_connect($host,$username,$password);
+$con=mysql_connect($host,$username,$password);
 mysql_select_db($database,$con);
 
 if (mysqli_connect_errno($con))
