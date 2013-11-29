@@ -4,11 +4,11 @@
 	$sql="INSERT INTO `user_table` (`user`, `pass`, `f_name`, `l_name`) 
 			VALUES ('$_POST[username]', '$_POST[password]', '$_POST[f_name]', '$_POST[l_name]') ";
 
+	if (!mysql_query($sql)) {
+		die('Error: ' . mysqli_error($con));
+	}
 
-	$result = mysql_query($sql);
-	if(!$result){
-		die('Error: ' . mysql_error());
-	} else { ?>
+	else { ?>
 		<!DOCTYPE html>
 		<html>
 		<head>

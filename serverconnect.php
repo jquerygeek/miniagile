@@ -1,5 +1,11 @@
 <?php
-$con=mysqli_connect("localhost","root","","miniagile");
+$username="root";
+$password= "";
+$host="localhost";
+$database="miniagile";
+
+$con=mysqli_connect($host,$username,$password);
+mysql_select_db($database,$con);
 
 if (mysqli_connect_errno($con))
   {
